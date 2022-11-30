@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-jade-cat.sh
-        container: qc.acc_skinny-denim-crocodile
+        - /usr/bin/env sh .sqa/script.freaky-buff-olm.sh
+        container: qc.acc_nerdy-smalt-macaque
   QC.Doc:
     repos:
       gitlab.com/rcstar/openQxD find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-wisteria-sloth.sh
-        container: qc.doc_thirsty-chestnut-sheep
+        - /usr/bin/env sh .sqa/script.flabby-flax-cuttlefish.sh
+        container: qc.doc_shabby-eggplant-quail
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-chartreuse-affenpinscher.sh
-        container: qc.doc_thirsty-rust-avocet
+        - /usr/bin/env sh .sqa/script.wiggy-chocolate-argentino.sh
+        container: qc.doc_blurry-persimmon-insect
   QC.Lic:
     repos:
       gitlab.com/rcstar/openQxD licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-champagne-yak.sh
-        container: qc.lic_lovely-mustard-yak
+        - /usr/bin/env sh .sqa/script.randy-crimson-turkey.sh
+        container: qc.lic_lousy-plum-elephant
   QC.Ver:
     repos:
       gitlab.com/rcstar/openQxD get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-azure-bonobo.sh
-        container: qc.ver_baggy-lavender-insect
+        - /usr/bin/env sh .sqa/script.beady-amethyst-antelope.sh
+        container: qc.ver_shaggy-lilac-birman
 timeout: 1800
