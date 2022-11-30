@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    gitlab.com/rcstar/openQxD:
+      branch: master
+      repo: https://gitlab.com/rcstar/openQxD
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      gitlab.com/rcstar/openQxD git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-jade-cat.sh
+        container: qc.acc_skinny-denim-crocodile
+  QC.Doc:
+    repos:
+      gitlab.com/rcstar/openQxD find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-wisteria-sloth.sh
+        container: qc.doc_thirsty-chestnut-sheep
+      gitlab.com/rcstar/openQxD git:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-chartreuse-affenpinscher.sh
+        container: qc.doc_thirsty-rust-avocet
+  QC.Lic:
+    repos:
+      gitlab.com/rcstar/openQxD licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-champagne-yak.sh
+        container: qc.lic_lovely-mustard-yak
+  QC.Ver:
+    repos:
+      gitlab.com/rcstar/openQxD get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-azure-bonobo.sh
+        container: qc.ver_baggy-lavender-insect
+timeout: 1800
