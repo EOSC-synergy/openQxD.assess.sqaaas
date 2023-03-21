@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.7
+      branch: release/1.7.9
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     gitlab.com/rcstar/openQxD:
       branch: master
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-rose-anteater.sh
-        container: qc.acc_scanty-corn-centipede
+        - /usr/bin/env sh .sqa/script.crabby-olivine-coral.sh
+        container: qc.acc_queasy-cobalt-moose
   QC.Doc:
     repos:
       gitlab.com/rcstar/openQxD find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-viridian-coyote.sh
-        container: qc.doc_skinny-rose-uguisu
+        - /usr/bin/env sh .sqa/script.lanky-carmine-dugong.sh
+        container: qc.doc_fuzzy-brown-foxhound
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-linen-gibbon.sh
-        container: qc.doc_ugly-rose-robin
+        - /usr/bin/env sh .sqa/script.surly-chartreuse-lemming.sh
+        container: qc.doc_flimsy-tomato-seal
   QC.Lic:
     repos:
       gitlab.com/rcstar/openQxD licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-silver-dollar.sh
-        container: qc.lic_trippy-vermilion-coral
+        - /usr/bin/env sh .sqa/script.sloppy-emerald-deer.sh
+        container: qc.lic_frumpy-copper-lobster
   QC.Ver:
     repos:
       gitlab.com/rcstar/openQxD get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-olive-hedgehog.sh
-        container: qc.ver_bumpy-mustard-whippet
-timeout: 1800
+        - /usr/bin/env sh .sqa/script.shaggy-lavender-bear.sh
+        container: qc.ver_homey-mauve-chin
+timeout: 5400
