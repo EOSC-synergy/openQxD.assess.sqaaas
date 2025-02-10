@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.9
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     gitlab.com/rcstar/openQxD:
       branch: master
@@ -15,28 +15,38 @@ sqa_criteria:
     repos:
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-olivine-coral.sh
-        container: qc.acc_queasy-cobalt-moose
+        - /usr/bin/env sh .sqa/script.shabby-flax-booby.sh
+        container: qc.acc_gummy-cerise-coyote
   QC.Doc:
     repos:
       gitlab.com/rcstar/openQxD find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-carmine-dugong.sh
-        container: qc.doc_fuzzy-brown-foxhound
+        - /usr/bin/env sh .sqa/script.trippy-peach-scorpion.sh
+        container: qc.doc_slimy-vermilion-terrier
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-chartreuse-lemming.sh
-        container: qc.doc_flimsy-tomato-seal
+        - /usr/bin/env sh .sqa/script.sleepy-coral-tarsier.sh
+        container: qc.doc_pokey-pear-frigatebird
+      gitlab.com/rcstar/openQxD markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-periwinkle-eleuth.sh
+        container: qc.doc_smelly-asparagus-bulldog
   QC.Lic:
     repos:
       gitlab.com/rcstar/openQxD licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-emerald-deer.sh
-        container: qc.lic_frumpy-copper-lobster
+        - /usr/bin/env sh .sqa/script.craggy-magenta-chipmunk.sh
+        container: qc.lic_flimsy-cardinal-bee
+  QC.Sty:
+    repos:
+      gitlab.com/rcstar/openQxD oclint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-saffron-yak.sh
+        container: qc.sty_woolly-coral-hummingbird
   QC.Ver:
     repos:
       gitlab.com/rcstar/openQxD get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-lavender-bear.sh
-        container: qc.ver_homey-mauve-chin
+        - /usr/bin/env sh .sqa/script.crabby-cream-mandrill.sh
+        container: qc.ver_blurry-vermilion-hippopotamus
 timeout: 5400
