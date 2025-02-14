@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-flax-booby.sh
-        container: qc.acc_gummy-cerise-coyote
+        - /usr/bin/env sh .sqa/script.skimpy-carmine-squirt.sh
+        container: qc.acc_greasy-aquamarine-nightingale
   QC.Doc:
     repos:
       gitlab.com/rcstar/openQxD find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-peach-scorpion.sh
-        container: qc.doc_slimy-vermilion-terrier
+        - /usr/bin/env sh .sqa/script.zippy-wheat-lemur.sh
+        container: qc.doc_surly-lemon-kingfisher
       gitlab.com/rcstar/openQxD git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-coral-tarsier.sh
-        container: qc.doc_pokey-pear-frigatebird
+        - /usr/bin/env sh .sqa/script.sleepy-pumpkin-ragdoll.sh
+        container: qc.doc_stuffy-ecru-cheetah
       gitlab.com/rcstar/openQxD markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-periwinkle-eleuth.sh
-        container: qc.doc_smelly-asparagus-bulldog
+        - /usr/bin/env sh .sqa/script.freaky-pear-cattle.sh
+        container: qc.doc_gloppy-lemon-insect
   QC.Lic:
     repos:
       gitlab.com/rcstar/openQxD licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-magenta-chipmunk.sh
-        container: qc.lic_flimsy-cardinal-bee
+        - /usr/bin/env sh .sqa/script.clammy-tangerine-wallaby.sh
+        container: qc.lic_leaky-apricot-coral
   QC.Sty:
     repos:
       gitlab.com/rcstar/openQxD oclint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-saffron-yak.sh
-        container: qc.sty_woolly-coral-hummingbird
+        - /usr/bin/env sh .sqa/script.crappy-copper-impala.sh
+        container: qc.sty_woozy-rose-chin
   QC.Ver:
     repos:
       gitlab.com/rcstar/openQxD get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-cream-mandrill.sh
-        container: qc.ver_blurry-vermilion-hippopotamus
+        - /usr/bin/env sh .sqa/script.breezy-amethyst-cichlid.sh
+        container: qc.ver_homey-peach-squid
 timeout: 5400

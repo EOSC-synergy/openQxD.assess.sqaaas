@@ -1,5 +1,5 @@
 services:
-  qc.acc_gummy-cerise-coyote:
+  qc.acc_greasy-aquamarine-nightingale:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,25 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_pokey-pear-frigatebird:
-    command: sleep 6000000
-    image: bitnami/git:2.34.1
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_slimy-vermilion-terrier:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
-      dockerfile: Dockerfile
-    command: sleep 6000000
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_smelly-asparagus-bulldog:
+  qc.doc_gloppy-lemon-insect:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -35,7 +17,25 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_flimsy-cardinal-bee:
+  qc.doc_stuffy-ecru-cheetah:
+    command: sleep 6000000
+    image: bitnami/git:2.34.1
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.doc_surly-lemon-kingfisher:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
+      dockerfile: Dockerfile
+    command: sleep 6000000
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.lic_leaky-apricot-coral:
     command: sleep 6000000
     image: eoscsynergy/sqaaas-licensee:9.17.0
     volumes:
@@ -43,7 +43,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_woolly-coral-hummingbird:
+  qc.sty_woozy-rose-chin:
     command: sleep 6000000
     image: drakorgaur/oclint:3077181575
     volumes:
@@ -51,7 +51,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_blurry-vermilion-hippopotamus:
+  qc.ver_homey-peach-squid:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
